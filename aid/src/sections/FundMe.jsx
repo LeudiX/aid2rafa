@@ -6,7 +6,7 @@ import { IMPACT_CARDS } from '../data/portfolioData';
 
 export default function FundMe() {
   const [copiedAddress, setCopiedAddress] = useState('');
-  const cryptoAddress = "TY278fsh7389dhjasD78hasud9aHUHSA78d";
+  const cryptoAddress = "0xAF34430f05713B4D3b3Fc4949F905F111Df5F2fc";
 
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
@@ -38,7 +38,7 @@ export default function FundMe() {
           <div className="md:col-span-5 flex flex-col items-center justify-center space-y-3">
             <div className="p-4 bg-white rounded-2xl shadow-xl shadow-black/40 hover:scale-105 transition-transform duration-300 border border-slate-200">
               <img 
-                src="https://api.qrserver.com/v1/create-qr-code/?size=180&data=https://paypal.me/yourusername" 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=180&data=https://paypal.me/emileracine" 
                 alt="Donation QR Code"
                 className="w-[160px] h-[160px]"
               />
@@ -50,7 +50,7 @@ export default function FundMe() {
             <h4 className="text-lg font-medium text-slate-200 text-center md:text-left">Transfer Infrastructure</h4>
             
             <a 
-              href="https://paypal.me/yourusername" 
+              href="https://paypal.me/emileracine" 
               target="_blank" 
               rel="noreferrer" 
               className="w-full px-5 py-4 bg-blue-600/20 border border-blue-500/30 rounded-xl flex items-center justify-between group hover:bg-blue-600/30 transition-all duration-200"
@@ -61,7 +61,7 @@ export default function FundMe() {
 
             <div className="w-full px-5 py-4 bg-slate-900/80 border border-slate-800 rounded-xl flex items-center justify-between">
               <div className="overflow-hidden mr-2">
-                <span className="block text-xs uppercase tracking-wider font-mono text-cyan-500">USDT (TRC-20 Address)</span>
+                <span className="block text-xs uppercase tracking-wider font-mono text-cyan-500">USDT (ERC-20 Address)</span>
                 <span className="block text-sm font-mono font-medium truncate text-slate-300 mt-0.5">{cryptoAddress}</span>
               </div>
               <button 
